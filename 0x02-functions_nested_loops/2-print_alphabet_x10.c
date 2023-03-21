@@ -3,8 +3,6 @@
 /**
  *print_alphabet_x10 - prints the alphabet, in lowercase,10 times,
  *followed by a new line
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
  */
 
 void print_alphabet_x10(void)
@@ -22,5 +20,4 @@ void print_alphabet_x10(void)
 		k++;
 		_putchar('\n');
 	}
-	return (0);
 }
