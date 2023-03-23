@@ -8,9 +8,9 @@
 
 void print_most_numbers(void)
 {
-	int a ;
+	int a;
 
-	for (a = 48 ;a <= 57 ;a++)
+	for (a = 48; a <= 57; a++)
 	{
 		if (a != 2 && a != 4)
 		{
