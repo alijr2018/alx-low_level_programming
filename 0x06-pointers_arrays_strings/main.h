@@ -9,8 +9,7 @@ char *_strncat(char *dest, char *src, int n);
 void _puts(char *str);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
-void rev_string(char *s);
-
+void reverse_array(int *a, int n);
 void puts2(char *str);
 
 void puts_half(char *str);
