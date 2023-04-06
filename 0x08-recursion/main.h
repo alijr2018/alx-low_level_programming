@@ -13,5 +13,8 @@ int factorial(int n);
 
 int _pow_recursion(int x, int y);
 
+int _sqrt_recursion(int n);
+
+int asqrt(int n, int i);
 
 #endif /* MAIN_H */
