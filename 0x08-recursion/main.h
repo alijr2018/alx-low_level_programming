@@ -17,4 +17,8 @@ int _sqrt_recursion(int n);
 
 int asqrt(int n, int i);
 
+int is_prime_number(int n);
+
+int is_it_multip(int n, int i);
+
 #endif /* MAIN_H */
