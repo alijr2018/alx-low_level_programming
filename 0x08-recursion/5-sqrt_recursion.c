@@ -11,6 +11,15 @@ int _sqrt_recursion(int n)
 {
 	return (asqrt(n, 1));
 }
+
+/**
+ * asqrt - _sqrt_recursion
+ * @n: parametre
+ * @i: parametre
+ *
+ * Return: sqrt
+ **/
+
 int asqrt(int n, int i)
 {
 	if (n < 0)
