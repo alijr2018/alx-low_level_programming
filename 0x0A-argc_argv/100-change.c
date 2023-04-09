@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 	if (change < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 	else
 		for (i = 0; change > 0; i++)
