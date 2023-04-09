@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int i, change;
 	int cents[] __attribute__((unused)) = {25, 10, 5, 2, 1};
 
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -21,8 +21,7 @@ int main(int argc, char *argv[])
 	change = atoi(argv[1]);
 	if (change < 0)
 	{
-		printf("Error\n");
-		return (0);
+		printf("0\n");
 	}
 	else
 		for (i = 0; change > 0; i++)
