@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, change;
+	int cents[] __attribute__((unused)) = {25, 10, 5, 2, 1};
 
 	if (argc < 2 || argc != 2)
 	{
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	change = atoi(argv[1]);
-	if (change < 48)
+	if (change < 0)
 	{
 		printf("Error\n");
 		return (0);
