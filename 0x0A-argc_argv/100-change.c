@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	change = atoi(argv[1]);
-	if (change < 0)
+	if (change < 48)
 	{
 		printf("Error\n");
 		return (0);
