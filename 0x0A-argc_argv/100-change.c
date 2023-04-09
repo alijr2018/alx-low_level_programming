@@ -3,7 +3,8 @@
 #include<stdlib.h>
 
 /**
- * main - function to print out the change that needs to given
+ * main - program that prints the minimum number of coins
+ * to make change for an amount of money.
  * @argc: number of arguments to be passed
  * @argv: number of variables to calculate
  * Return: always 0 for sucess
@@ -39,4 +40,5 @@ int main(int argc, char *argv[])
 				change = change - 1;
 		}
 	printf("%d\n", i);
+	return (0);
 }
