@@ -5,8 +5,8 @@
 /**
  * main - program that prints the minimum number of coins
  * to make change for an amount of money.
- * @argc: number of arguments to be passed
- * @argv: number of variables to calculate
+ * @argc: number of command line arguments
+ * @argv: array that contains the program command line arguments
  * Return: always 0 for sucess
  **/
 
