@@ -1,6 +1,7 @@
 #include "main.h"
 #include<stdio.h>
 #include<stdlib.h>
+
 /**
  * main - function to print out the change that needs to given
  * @argc: number of arguments to be passed
@@ -38,5 +39,4 @@ int main(int argc, char *argv[])
 				change = change - 1;
 		}
 	printf("%d\n", i);
-	return (0);
 }
