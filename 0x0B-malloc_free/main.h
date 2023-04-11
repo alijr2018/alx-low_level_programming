@@ -7,6 +7,7 @@ int _isalpha(int c);
 int _abs(int n);
 int _isupper(int c);
 int _isdigit(int c);
+char *_strdup(char *str);
 int _strlen(char *s);
 void _puts(char *s);
 char *_strcpy(char *dest, char *src);
