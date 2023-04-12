@@ -1,7 +1,5 @@
 # alx-low_level_programming
 
-<<<<<<< HEAD
-=======
 this repository containe all the stepes and task of alx SE program
 
 # Hello World
@@ -46,4 +44,3 @@ this repository containe all the stepes and task of alx SE program
 # Malloc and Free
 
 *[0x0B-malloc_free](./0x0B-malloc_free/)
->>>>>>> 08bb8e4951bc23028e8699d986ca3df622e4730b
