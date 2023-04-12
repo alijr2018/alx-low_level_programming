@@ -23,10 +23,16 @@ On success, the _strdup function returns a pointer to the duplicated string. It 
 # He who is not courageous enough to take risks will accomplish nothing in life
 Write a function that concatenates two strings.
 
-The returned pointer should point to a newly allocated space in memory which contains the contents of s1, followed by the contents of s2, and null terminated.
-
-if NULL is passed, treat it as an empty string.
-
-The function should return NULL on failure.
-
 * [2-str_concat.c](./2-str_concat.c)
+
+# If you even dream of beating me you'd better wake up and apologize
+
+Write a function that returns a pointer to a 2 dimensional array of integers.
+
+* [3_alloc_grid.c](./3-alloc_grid.c)
+
+# It's not bragging if you can back it up
+
+Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
+
+* []
