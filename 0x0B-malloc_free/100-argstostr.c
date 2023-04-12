@@ -11,12 +11,11 @@
 char *argstostr(int ac, char **av)
 {
 	int i, j;
-	char *var;
+	char *var = NULL;
 	int x, y;
 
 	x = 0;
 	y = 0;
-	*var = NULL;
 	if ((ac == 0 || av == NULL) && var == NULL)
 		return (NULL);
 
