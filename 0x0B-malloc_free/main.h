@@ -6,6 +6,7 @@ int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
 int _isupper(int c);
+char *str_concat(char *s1, char *s2);
 int _isdigit(int c);
 char *_strdup(char *str);
 int _strlen(char *s);

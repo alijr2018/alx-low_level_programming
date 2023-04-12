@@ -12,8 +12,21 @@ Returns a pointer to the array, or NULL if it fails
 # The woman who has no imagination has no wings
 
 Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
-The _strdup() function returns a pointer to a new string which is a duplicate of the string str. Memory for the new string is obtained with malloc, and can be freed with free.
-Returns NULL if str = NULL
-On success, the _strdup function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available
+The _strdup() function returns a pointer to a new string which is a duplicate of the string str.
+ 
+Memory for the new string is obtained with malloc, and can be freed with free.
+
+On success, the _strdup function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available.
 
 * [1-strdup.c](./1-strdup.c)
+
+# He who is not courageous enough to take risks will accomplish nothing in life
+Write a function that concatenates two strings.
+
+The returned pointer should point to a newly allocated space in memory which contains the contents of s1, followed by the contents of s2, and null terminated.
+
+if NULL is passed, treat it as an empty string.
+
+The function should return NULL on failure.
+
+* [2-str_concat.c](./2-str_concat.c)
