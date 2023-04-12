@@ -42,9 +42,3 @@ Write a function that frees a 2 dimensional grid previously created by your allo
 Write a function that concatenates all the arguments of your program.
 
 * [100-argstostr.c](./100-argstostr.c)
-
-# I will show you how great I am
-
-Write a function that splits a string into words.
-
-*[101-strtow.c](./101-strtow.c)
