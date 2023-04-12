@@ -1,11 +1,13 @@
 !#/bin/bash
 
+git add .
+
+git status
+
 echo "your message"
 
 read commit
 
-git add .
-
-git commit -m " $commit "
+git commit -m "$commit"
 
 git push
