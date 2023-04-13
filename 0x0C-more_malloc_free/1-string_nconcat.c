@@ -10,7 +10,7 @@
  * Return: pointer to new area in memory, NULL if it fails
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-
+{
 	unsigned int i, j, len, size;
 	char *all, *empty;
 
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 		i++;
 	}
-	all[i] = '\0'
+	all[i] = '\0';
 	return (all);
-
+}
 
