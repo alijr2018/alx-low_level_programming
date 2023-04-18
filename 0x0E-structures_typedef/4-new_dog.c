@@ -50,25 +50,25 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *new;
 
-	dog = malloc(sizeof(dog_t));
-	if (dog == NULL)
+	new = malloc(sizeof(dog_t));
+	if (new == NULL)
 		return (NULL);
-	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (dog->name == NULL)
+	new->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (new->name == NULL)
 	{
-		free(dog);
+		free(new);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (dog->owner == NULL)
+	new->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (new->owner == NULL)
 	{
-		free(dog);
+		free(new);
 		return (NULL);
 	}
-	_strcpy(dog->name, name);
-	_strcpy(dog->owner, owner);
-	dog->age = age;
-	return (dog);
+	_strcpy(new->name, name);
+	_strcpy(new->owner, owner);
+	new->age = age;
+	return (new);
 }
