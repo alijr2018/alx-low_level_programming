@@ -9,21 +9,21 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
-	char *s;
 	va_list list;
+	unsigned int i;
 
 	va_start(list, n);
-	if (separator == NULL || *separator == 0)
-		s = "";
-	else
-		s = (char *) separator;
-	if (n > 0)
-		printf("%d", va_arg(list, int));
+
 	for (i = 0; i < n; i++)
 	{
-		printf("%s%d", s, va_arg(list, int));
+		printf("%d", va_arg(list, int))
+
+		if (separator != NULL && i != (n - 1))
+		{
+			printf("%s", separator);
+		}
 	}
-	printf("\n");
+	putchar('\n');
 	va_end(list);
 }
+
