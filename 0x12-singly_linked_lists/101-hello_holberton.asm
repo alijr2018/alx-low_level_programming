@@ -1,19 +1,21 @@
-section .bss ;variable
-section .data ;cons
-h : db "Hello, Holberton", 17 ; string to print
-hl: equ $-h
-section .text
-global _start
+	extern	printf		; the C function, to be called
 
-_start
-mov rax,1 ; sys_write
-mov rdi,1 ; stdout
-mov rsi,h ;message to write
-mov rdx,hl ;message length
-syscall ;call karnel
+	        section .data		; Data section, initialized variables
+msg:		db "Hello, Holberton", 0 ; C string needs 0
+fmt:	    	db "%s", 10, 0          ; The printf format, "\n",'0'
 
-;end program
+	        section .text		; Code section.
 
-mov rax,60 ; sys_exit
-mov rdi,0 ;error code 0 (success)
-syscall
+	        global main		; the standard gcc entry point
+main:					; the program label for the entry point
+	        push    rbp		; set up stack frame, must be alligned
+
+		mov	rdi,fmt
+		mov	rsi,msg
+		mov	rax,0		; or can be  xor  rax,rax
+	        call    printf		; Call C function
+
+		pop	rbp		; restore stack
+
+		mov	rax,0		; normal, no error, return value
+		ret			; return
