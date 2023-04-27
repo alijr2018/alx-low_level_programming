@@ -1,7 +1,7 @@
 section .bss ;variable
 section .data ;cons
 h : db "Hello, Holberton", 17 ; string to print
-hl: equ $-h 
+hl: equ $-h
 section .text
 global _start
 
