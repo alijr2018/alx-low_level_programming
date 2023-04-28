@@ -8,7 +8,7 @@ global main
 extern printf ;call function printf 
 
 main:
-    push prompt
+    push rbp
        
     
     mov     rdi,fmt
