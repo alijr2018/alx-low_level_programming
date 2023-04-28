@@ -1,25 +1,27 @@
+
 section .data
-fmt     db "%u  %s",10,0
-msg1    db "Hello",0
-msg2    db "Goodbye",0
+prompt  db 'Name: ', 0          ;; char prompt[] = "Name: ";
+result  db 'Hello, %s!', 0      ;; char result[] = "Hello, %s!";
+
+    section .bss
+name    resb 1024       ;; char name[24];
 
     section .text
-    extern printf
-    global _start
+global _main
+extern _printf, _gets
+_main:
+    push prompt
+    call _printf        ;; printf(prompt);
+    add esp, 4
 
-_start:
-    mov  edx, msg1
-    mov  esi, 1
-    mov  edi, fmt
-    mov  eax, 0     ; no f.p. args
-    call printf
+    push name
+    call _gets          ;; gets(name);
+    add esp, 4
 
-    mov  edx, msg2
-    mov  esi, 2
-    mov  edi, fmt
-    mov  eax, 0     ; no f.p. args
-    call printf
+    push name
+    push result
+    call _printf        ;; printf(result, name);
+    add esp, 8
 
-    mov  ebx, 0     ; return value
-    mov  eax, 1
-    int  0x80
+    xor eax, eax        ;; 0 for a return value
+    ret
