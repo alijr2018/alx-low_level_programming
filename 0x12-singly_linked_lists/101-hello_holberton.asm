@@ -1,6 +1,6 @@
 section .data
-message  db "Hello, Holberton", 0 ;message
-result  db "%s", ,10,0 ; format
+message:  db "Hello, Holberton", 0 ;message
+result:  db "%s", ,10,0 ; format
 
     section .text ; code section
 global main
