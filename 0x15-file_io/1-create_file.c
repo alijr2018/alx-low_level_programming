@@ -26,9 +26,9 @@ int create_file(const char *filename, char *text_content)
 	k = 0;
 	while  (text_content[k])
 	{
-		j = write(i, text_content, k);
 		k++;
 	}
+	j = write(i, text_content, k);
 	if (j == -1)
 		return (-1);
 
