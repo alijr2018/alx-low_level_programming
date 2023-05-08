@@ -5,14 +5,14 @@
  * standard output.
  * @filename: characther to pointer.
  * @letters: size of letter.
- * Returns: the actual number of letters it could read and print.
+ * Return: the actual number of letters it could read and print.
 **/
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int i;
 	char *a;
-	ssize_t r, w, o;
+	ssize_t r, w;
 
 	i = open(filename, O_RDONLY);
 	if (!filename)
@@ -25,13 +25,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!a)
 		return (0);
 
-	o = open(filename, O_RDONLY);
 	r = read(i, a, letters);
 	w = write(STDOUT_FILENO, a, r);
 
 	close(i);
 	free(a);
 
-	return (o);
+	return (w);
 
 }
