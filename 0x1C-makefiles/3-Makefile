@@ -7,7 +7,21 @@ OBJ = $(SRC:%.c=%.o)
 NAME = school
 
 %.o: %.c m.h
-	$(CC) -c -o $@ $<
+
+RM = rm -fr
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean:
+	clean oclean
+
+re:
+	oclean all
+
